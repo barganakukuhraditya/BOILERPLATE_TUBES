@@ -1,7 +1,7 @@
 package url
 
 import (
-	"iteung/controller"
+	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/controller"
 
 	"github.com/gofiber/fiber/v2"
 )

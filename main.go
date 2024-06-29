@@ -3,13 +3,12 @@ package main
 import (
 	"log"
 
-	"iteung/config"
+	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/config"
 
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 
-
-	"iteung/url"
+	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/url"
 
 	"github.com/gofiber/fiber/v2"
 )
