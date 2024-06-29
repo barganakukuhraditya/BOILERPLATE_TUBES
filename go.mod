@@ -6,22 +6,32 @@ require (
 	github.com/aiteung/musik v0.0.5
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gofiber/fiber/v2 v2.52.4
+	github.com/swaggo/swag v1.16.3
 	github.com/whatsauth/whatsauth v0.2.9
 	go.mongodb.org/mongo-driver v1.15.1
 )
 
 require (
 	aidanwoods.dev/go-paseto v1.3.0 // indirect
+	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/aiteung/atapi v0.0.16 // indirect
 	github.com/aiteung/atmessage v0.0.27 // indirect
 	github.com/aiteung/atmodel v0.0.4 // indirect
 	github.com/fasthttp/websocket v1.5.3 // indirect
+	github.com/go-openapi/jsonpointer v0.21.0 // indirect
+	github.com/go-openapi/jsonreference v0.21.0 // indirect
+	github.com/go-openapi/spec v0.21.0 // indirect
+	github.com/go-openapi/swag v0.23.0 // indirect
 	github.com/gofiber/websocket/v2 v2.2.1 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/josharian/intern v1.0.0 // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
 	github.com/whatsauth/watoken v0.1.2 // indirect
 	go.mau.fi/util v0.0.0-20230805154123-3981666a86f1 // indirect
+	golang.org/x/tools v0.22.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
 require (
@@ -51,9 +61,9 @@ require (
 	github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a // indirect
 	go.mau.fi/libsignal v0.1.0 // indirect
 	go.mau.fi/whatsmeow v0.0.0-20230817083005-1c185f033d88
-	golang.org/x/crypto v0.17.0 // indirect
-	golang.org/x/sync v0.2.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/crypto v0.24.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
+	golang.org/x/sys v0.21.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 )
