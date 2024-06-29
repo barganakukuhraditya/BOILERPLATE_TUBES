@@ -22,6 +22,7 @@ type User struct {
 	Username		string				`bson:"username,omitempty" json:"username,omitempty" example:"user"`
 	Password		string				`bson:"password,omitempty" json:"password,omitempty" example:"user"`
 	Email			string				`bson:"email,omitempty" json:"email,omitempty" example:"user"`
+	Roles			[]Roles				`bson:"roles,omitempty" json:"roles,omitempty"`
 	Phone			string				`bson:"phone,omitempty" json:"phone,omitempty" example:"08123456789"`
 	Address			string				`bson:"address,omitempty" json:"address,omitempty" example:"Jl. Jalan"`
 }
