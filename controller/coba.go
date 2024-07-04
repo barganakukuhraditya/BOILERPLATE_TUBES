@@ -83,6 +83,11 @@ func GetParfumeID(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
+func GetParfume(c *fiber.Ctx) error {
+	ps := cek.GetAllParfume(config.Parfumemongoconn, "parfume")
+	return c.JSON(ps)
+}
+
 func UpdateData(c *fiber.Ctx) error {
 	db := config.Parfumemongoconn
 
