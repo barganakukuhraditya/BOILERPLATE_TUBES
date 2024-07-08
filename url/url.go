@@ -18,4 +18,5 @@ func Web(page *fiber.App) {
 	page.Options("/", controller.Sink)
 
 	page.Get("/parfume", controller.GetParfume)
+	page.Post("/insert", controller.InsertDataParfume)
 }
