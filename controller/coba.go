@@ -16,7 +16,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-func InsertDataParfume(c *fiber.Ctx) error {
+func InsertParfume(c *fiber.Ctx) error {
 	db := config.Parfumemongoconn
 	var parfume inimodel.Parfume
 	if err := c.BodyParser(&parfume); err != nil {
@@ -88,7 +88,7 @@ func GetParfume(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
-func UpdateData(c *fiber.Ctx) error {
+func UpdateParfume(c *fiber.Ctx) error {
 	db := config.Parfumemongoconn
 
 	// Get the ID from the URL parameter
