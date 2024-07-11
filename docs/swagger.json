@@ -22,6 +22,41 @@
     "host": "tb-parfume2024-34a7b650de40.herokuapp.com",
     "basePath": "/",
     "paths": {
+        "/delete/{id}": {
+            "delete": {
+                "description": "Hapus data parfume.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Parfume"
+                ],
+                "summary": "Delete data parfume.",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Masukan ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
         "/insert": {
             "post": {
                 "description": "Input data parfume.",

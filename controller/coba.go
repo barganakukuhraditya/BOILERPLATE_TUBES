@@ -178,6 +178,17 @@ func UpdateParfume(c *fiber.Ctx) error {
 	})
 }
 
+// DeleteParfumeByID godoc
+// @Summary Delete data parfume.
+// @Description Hapus data parfume.
+// @Tags Parfume
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Success 200
+// @Failure 400
+// @Failure 500
+// @Router /delete/{id} [delete]
 func DeleteParfumeByID(c *fiber.Ctx) error {
 	id := c.Params("id")
 	if id == "" {
