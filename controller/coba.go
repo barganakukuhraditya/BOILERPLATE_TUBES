@@ -83,6 +83,14 @@ func GetParfumeID(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
+// GetParfume godoc
+// @Summary Get All Data Parfume.
+// @Description Mengambil semua data parfume.
+// @Tags Parfume
+// @Accept json
+// @Produce json
+// @Success 200 {object} Parfume
+// @Router /parfume [get]
 func GetParfume(c *fiber.Ctx) error {
 	ps := cek.GetAllParfume(config.Parfumemongoconn, "parfume")
 	return c.JSON(ps)

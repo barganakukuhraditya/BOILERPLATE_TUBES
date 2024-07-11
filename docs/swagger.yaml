@@ -1,4 +1,35 @@
 basePath: /
+definitions:
+  controller.Parfume:
+    properties:
+      _id:
+        example: "123456789"
+        type: string
+      deskripsi:
+        example: Parfum yang sangat wangi
+        type: string
+      harga:
+        example: 1000000
+        type: integer
+      jenis_parfume:
+        example: Eau de Parfum
+        type: string
+      merk:
+        example: Dior
+        type: string
+      nama_parfume:
+        example: Chirstian Dior
+        type: string
+      stok:
+        example: 100
+        type: integer
+      tahun_peluncuran:
+        example: 2021
+        type: integer
+      ukuran:
+        example: 100ml
+        type: string
+    type: object
 host: tb-parfume2024-34a7b650de40.herokuapp.com
 info:
   contact:
@@ -12,7 +43,22 @@ info:
   termsOfService: http://swagger.io/terms/
   title: SWAGGER TUGAS BESAR
   version: "1.0"
-paths: {}
+paths:
+  /parfume:
+    get:
+      consumes:
+      - application/json
+      description: Mengambil semua data parfume.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Parfume'
+      summary: Get All Data Parfume.
+      tags:
+      - Parfume
 schemes:
 - https
 - http

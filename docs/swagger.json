@@ -21,5 +21,72 @@
     },
     "host": "tb-parfume2024-34a7b650de40.herokuapp.com",
     "basePath": "/",
-    "paths": {}
+    "paths": {
+        "/parfume": {
+            "get": {
+                "description": "Mengambil semua data parfume.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Parfume"
+                ],
+                "summary": "Get All Data Parfume.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Parfume"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.Parfume": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "example": "123456789"
+                },
+                "deskripsi": {
+                    "type": "string",
+                    "example": "Parfum yang sangat wangi"
+                },
+                "harga": {
+                    "type": "integer",
+                    "example": 1000000
+                },
+                "jenis_parfume": {
+                    "type": "string",
+                    "example": "Eau de Parfum"
+                },
+                "merk": {
+                    "type": "string",
+                    "example": "Dior"
+                },
+                "nama_parfume": {
+                    "type": "string",
+                    "example": "Chirstian Dior"
+                },
+                "stok": {
+                    "type": "integer",
+                    "example": 100
+                },
+                "tahun_peluncuran": {
+                    "type": "integer",
+                    "example": 2021
+                },
+                "ukuran": {
+                    "type": "string",
+                    "example": "100ml"
+                }
+            }
+        }
+    }
 }
