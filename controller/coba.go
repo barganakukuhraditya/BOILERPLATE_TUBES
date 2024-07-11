@@ -119,6 +119,18 @@ func GetParfume(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
+// UpdateData godoc
+// @Summary Update data parfume.
+// @Description Ubah data parfume.
+// @Tags Parfume
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Param request body ReqParfume true "Payload Body [RAW]"
+// @Success 200 {object} Parfume
+// @Failure 400
+// @Failure 500
+// @Router /update/{id} [put]
 func UpdateParfume(c *fiber.Ctx) error {
 	db := config.Parfumemongoconn
 
