@@ -16,6 +16,17 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
+// InsertParfume godoc
+// @Summary Insert data parfume.
+// @Description Input data parfume.
+// @Tags Parfume
+// @Accept json
+// @Produce json
+// @Param request body Parfume true "Payload Body [RAW]"
+// @Success 200 {object} Parfume
+// @Failure 400
+// @Failure 500
+// @Router /insert [post]
 func InsertParfume(c *fiber.Ctx) error {
 	db := config.Parfumemongoconn
 	var parfume inimodel.Parfume
