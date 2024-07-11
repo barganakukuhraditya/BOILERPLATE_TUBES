@@ -19,9 +19,14 @@ func Web(page *fiber.App) {
 	page.Options("/", controller.Sink)
 
 	page.Get("/parfume", controller.GetParfume)
+	// page.Put("/edit", controller.UpdateParfume)
+	// page.Delete("/delete", controller.DeleteParfumeByID)
+	
+	page.Get("/parfume/:id", controller.GetParfumeID)
 	page.Post("/insert", controller.InsertParfume)
-	page.Put("/edit", controller.UpdateParfume)
-	page.Delete("/delete", controller.DeleteParfumeByID)
+	page.Get("/update/:id", controller.UpdateParfume)
+	page.Get("/delete/:id", controller.DeleteParfumeByID)
+	
 
 	page.Get("/docs/*", swagger.HandlerDefault)
 }
