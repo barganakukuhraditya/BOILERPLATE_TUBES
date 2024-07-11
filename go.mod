@@ -6,6 +6,7 @@ require (
 	github.com/aiteung/musik v0.0.5
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gofiber/fiber/v2 v2.52.5
+	github.com/gofiber/swagger v1.1.0
 	github.com/swaggo/swag v1.16.3
 	github.com/whatsauth/whatsauth v0.2.9
 	go.mongodb.org/mongo-driver v1.15.1
@@ -17,30 +18,22 @@ require (
 	github.com/aiteung/atapi v0.0.16 // indirect
 	github.com/aiteung/atmessage v0.0.27 // indirect
 	github.com/aiteung/atmodel v0.0.4 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/fasthttp/websocket v1.5.3 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.21.0 // indirect
 	github.com/go-openapi/spec v0.21.0 // indirect
 	github.com/go-openapi/swag v0.23.0 // indirect
-	github.com/gofiber/swagger v1.1.0 // indirect
 	github.com/gofiber/websocket/v2 v2.2.1 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee // indirect
-	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/swaggo/files/v2 v2.0.1 // indirect
-	github.com/urfave/cli/v2 v2.27.2 // indirect
 	github.com/whatsauth/watoken v0.1.2 // indirect
-	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	go.mau.fi/util v0.0.0-20230805154123-3981666a86f1 // indirect
 	golang.org/x/tools v0.23.0 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
 require (

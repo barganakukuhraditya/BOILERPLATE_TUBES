@@ -1,11 +1,15 @@
 basePath: /
-host: tb-parfume2024.herokuapp.com
+host: tb-parfume2024-34a7b650de40.herokuapp.com
 info:
   contact:
     email: 714220013@std.ulbi.ac.id
     name: API Support
     url: https://github.com/barganakukuhraditya
   description: This is a sample swagger for Fiber
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
   title: SWAGGER TUGAS BESAR
   version: "1.0"
 paths: {}
