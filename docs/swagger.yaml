@@ -59,6 +59,33 @@ paths:
       summary: Get All Data Parfume.
       tags:
       - Parfume
+  /parfume/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Ambil per ID data parfume.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Parfume'
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: Get By ID Data Parfume.
+      tags:
+      - Parfume
 schemes:
 - https
 - http

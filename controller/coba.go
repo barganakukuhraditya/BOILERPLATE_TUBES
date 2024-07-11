@@ -52,6 +52,18 @@ func Homepage(c *fiber.Ctx) error {
 	return c.JSON(ipaddr)
 }
 
+// GetPresensiID godoc
+// @Summary Get By ID Data Parfume.
+// @Description Ambil per ID data parfume.
+// @Tags Parfume
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Success 200 {object} Parfume
+// @Failure 400
+// @Failure 404
+// @Failure 500
+// @Router /parfume/{id} [get]
 func GetParfumeID(c *fiber.Ctx) error {
 	id := c.Params("id")
 	if id == "" {
