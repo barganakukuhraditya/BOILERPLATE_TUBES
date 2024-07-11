@@ -5,6 +5,16 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
+type ReqParfume struct {
+	Nama_Parfume	string				`bson:"nama_parfume,omitempty" json:"nama_parfume,omitempty" example:"Chirstian Dior"`
+	Jenis_Parfume	string				`bson:"jenis_parfume,omitempty" json:"jenis_parfume,omitempty" example:"Eau de Parfum"`
+	Merk			string				`bson:"merk,omitempty" json:"merk,omitempty" example:"Dior"`
+	Deskripsi		string				`bson:"deskripsi,omitempty" json:"deskripsi,omitempty" example:"Parfum yang sangat wangi"`
+	Harga			int					`bson:"harga,omitempty" json:"harga,omitempty" example:"1000000"`
+	Thn_Peluncuran	int					`bson:"tahun_peluncuran,omitempty" json:"tahun_peluncuran,omitempty" example:"2021"`
+	Stok			int					`bson:"stok,omitempty" json:"stok,omitempty" example:"100"`
+	Ukuran			string				`bson:"ukuran,omitempty" json:"ukuran,omitempty" example:"100ml"`
+}
 type Parfume struct {
 	ID				primitive.ObjectID 	`bson:"_id,omitempty" json:"_id,omitempty" example:"123456789"`
 	Nama_Parfume	string				`bson:"nama_parfume,omitempty" json:"nama_parfume,omitempty" example:"Chirstian Dior"`

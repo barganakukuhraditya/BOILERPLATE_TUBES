@@ -30,6 +30,33 @@ definitions:
         example: 100ml
         type: string
     type: object
+  controller.ReqParfume:
+    properties:
+      deskripsi:
+        example: Parfum yang sangat wangi
+        type: string
+      harga:
+        example: 1000000
+        type: integer
+      jenis_parfume:
+        example: Eau de Parfum
+        type: string
+      merk:
+        example: Dior
+        type: string
+      nama_parfume:
+        example: Chirstian Dior
+        type: string
+      stok:
+        example: 100
+        type: integer
+      tahun_peluncuran:
+        example: 2021
+        type: integer
+      ukuran:
+        example: 100ml
+        type: string
+    type: object
 host: tb-parfume2024-34a7b650de40.herokuapp.com
 info:
   contact:
@@ -110,6 +137,37 @@ paths:
         "500":
           description: Internal Server Error
       summary: Get By ID Data Parfume.
+      tags:
+      - Parfume
+  /update/{id}:
+    put:
+      consumes:
+      - application/json
+      description: Ubah data parfume.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Payload Body [RAW]
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/controller.ReqParfume'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Parfume'
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Update data parfume.
       tags:
       - Parfume
 schemes:
