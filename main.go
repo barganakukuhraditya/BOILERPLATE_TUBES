@@ -11,8 +11,20 @@ import (
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/url"
 
 	"github.com/gofiber/fiber/v2"
+	_ "github.com/barganakukuhaditya/BOILERPLATE_TUBES/docs"
 )
 
+// @title SWAGGER TUGAS BESAR
+// @version 1.0
+// @description This is a sample swagger for Fiber
+
+// @contact.name API Support
+// @contact.url https://github.com/barganakukuhraditya
+// @contact.email 714220013@std.ulbi.ac.id
+
+// @host tb-parfume2024.herokuapp.com
+// @BasePath /
+// @schemes https http
 func main() {
 	site := fiber.New(config.Iteung)
 	site.Use(cors.New(config.Cors))

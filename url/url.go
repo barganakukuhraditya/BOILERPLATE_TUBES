@@ -4,6 +4,7 @@ import (
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/controller"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/swagger" // swagger handler
 )
 
 func Web(page *fiber.App) {
@@ -21,4 +22,6 @@ func Web(page *fiber.App) {
 	page.Post("/insert", controller.InsertParfume)
 	page.Put("/edit", controller.UpdateParfume)
 	page.Delete("/delete", controller.DeleteParfumeByID)
+
+	page.Get("/docs/*", swagger.HandlerDefault)
 }

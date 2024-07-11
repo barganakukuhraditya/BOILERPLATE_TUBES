@@ -1,7 +1,20 @@
 {
+    "schemes": [
+        "https",
+        "http"
+    ],
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "description": "This is a sample swagger for Fiber",
+        "title": "SWAGGER TUGAS BESAR",
+        "contact": {
+            "name": "API Support",
+            "url": "https://github.com/barganakukuhraditya",
+            "email": "714220013@std.ulbi.ac.id"
+        },
+        "version": "1.0"
     },
+    "host": "tb-parfume2024.herokuapp.com",
+    "basePath": "/",
     "paths": {}
 }
