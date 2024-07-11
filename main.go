@@ -11,7 +11,8 @@ import (
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/url"
 
 	"github.com/gofiber/fiber/v2"
-	_ "github.com/barganakukuhaditya/BOILERPLATE_TUBES/docs"
+	// "github.com/gofiber/swagger" // swagger handler
+	// _ "github.com/barganakukuhaditya/BOILERPLATE_TUBES/docs"
 )
 
 // @title SWAGGER TUGAS BESAR
