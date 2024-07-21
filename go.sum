@@ -79,6 +79,8 @@ github.com/gryzlegrizz/BE_TugasBesar v0.0.6 h1:RO1ytXYbVtQJ0WVG1EPK22Lvdvv2llG+q
 github.com/gryzlegrizz/BE_TugasBesar v0.0.6/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
 github.com/gryzlegrizz/BE_TugasBesar v0.0.7 h1:bUrzUTwl3Tw+gecvD3o0DKRCRKyDHa9YCsb2RbavH44=
 github.com/gryzlegrizz/BE_TugasBesar v0.0.7/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.8 h1:tPEG/ktu/sqDPLkljZU7nJxmDG1UXniRTTr2P3zUtVM=
+github.com/gryzlegrizz/BE_TugasBesar v0.0.8/go.mod h1:CmzTIrOdGspgYLJ3UC3hQan1kFA6tEu7aKEEd3zoD3c=
 github.com/hashicorp/go-uuid v1.0.2/go.mod h1:6SBZvOh/SIDV7/2o3Jml5SYk/TvGqwFJ/bN7x4byOro=
 github.com/jcmturner/aescts/v2 v2.0.0/go.mod h1:AiaICIRyfYg35RUkr8yESTqvSy7csK90qZ5xfvvsoNs=
 github.com/jcmturner/dnsutils/v2 v2.0.0/go.mod h1:b0TnjGOvI/n42bZa+hmXL+kFJZsFT7G4t3HTlQ184QM=

@@ -2,7 +2,6 @@ package url
 
 import (
 	"github.com/barganakukuhraditya/BOILERPLATE_TUBES/controller"
-
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/swagger" // swagger handler
 )
@@ -30,8 +29,6 @@ func Web(page *fiber.App) {
 	page.Post("/post", controller.InsertUser)
 	page.Put("user/put/:id", controller.UpdateUser)
 	page.Delete("user/hapus/:id", controller.DeleteUserByID)
-	
-	page.Post("/login", controller.InsertUser)	
 
 	page.Get("/docs/*", swagger.HandlerDefault)
 }
